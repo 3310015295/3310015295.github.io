@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <base href="https://3310015295.github.io/">
   <title>night</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-  <link rel="stylesheet" href="https://3310015295.github.io/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://3310015295.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   
-  <link rel="stylesheet" href="https://3310015295.github.io/css/demo.css" />
-  <link rel="stylesheet" href="https://3310015295.github.io/css/templatemo-style.css">
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css">
   
-  <script type="text/javascript" src="https://3310015295.github.io/js/modernizr.custom.86080.js"></script>
-		
+  <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 	</head>
 <body>
 
@@ -33,16 +32,31 @@
 			<div class="container-fluid" >
 				<div class="row cb-slideshow-text-container " style="margin: auto;text-align:center">
 					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
-					<header class="mb-5"><h1>生查子·元夕</h1></header>
-					<P class="mb-5">去年元夜时，花市灯如昼。</P>
-					<P class="mb-5">月上柳梢头，人约黄昏后。</P>
-					<P class="mb-5">今年元夜时，月与灯依旧。</P>
-					<P class="mb-5">不见去年人，泪湿春衫袖。</P>
-					</div>
-				</div>	
-			</div>	
+					  <p  class="mb-5" id="language_one"></p>
+				    </div>	
+				</div>
+			</div>
+			<div style="display:none;" id="language_two">
+					                                 江城子
+					    
+					    十年生死两茫茫。不思量。自难忘。
+					    
+					    纵使相逢应不识，尘满面，鬓如霜。
+					
+					    夜来幽梦忽还乡。小轩窗。正梳妆。
+					
+					    料得年年肠断处，明月夜，短松冈。        
+			</div>
+<script type="text/javascript">
+    var index=0;
+    var word=document.getElementById("language_two").innerHTML;
+    function type(){
+        document.getElementById("language_one").innerText = word.substring(0,index++);
+    }
+    setInterval(type, 100);
+</script>	
 	</body>
 
-	<script type="text/javascript" src="https://3310015295.github.io/js/particles.js"></script>
-	<script type="text/javascript" src="https://3310015295.github.io/js/app.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </html>
